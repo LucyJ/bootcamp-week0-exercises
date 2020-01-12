@@ -6,13 +6,15 @@ const assert = require('assert')
  */
 
 // TODO
-const triple = () => {
-
+const triple = (el) => {
+    return el*3
 };
 
 // TODO
 Array.prototype.map = function(fun) {
-
+    const arr = []
+    this.forEach(n => arr.push(fun(n)))
+    return arr
 };
 
 const arr = [0, 1, 2, 3, 4];
